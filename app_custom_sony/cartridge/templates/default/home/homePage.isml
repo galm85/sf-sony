@@ -1,0 +1,7 @@
+<isdecorate template="common/layout/page">
+
+    <section class="main-banner w-full">
+            <isslot id="home-page-main-banner" context="global" description="Home page main abnner"  />
+    </section>
+
+</isdecorate>

@@ -1,0 +1,26 @@
+<header class="flex flex-col  w-screen relative">
+    <iscomment> top Header </iscomment>
+    <div class="top-header w-screen bg-sky-700 h-[5vh] flex item-center">
+           <i class="fa-solid fa-bars pr-5 text-white text-3xl cursor" id="menu-trigger"></i>
+           <a href="${URLUtils.url('Home-Show')}">
+            <isslot id="mainLogo" context="global" description="main logo"   />
+           </a>
+    </div>
+    <iscomment> end Top Header </iscomment>
+
+
+    <iscomment> SideNav </iscomment>
+    <div id="sideMenuContainer" class="side-menu-container-close ">
+        <div id="sideMenu" class="side-menu  bg-sky-700">
+           <isinclude url="${URLUtils.url('Page-IncludeHeaderMenu')}"/>
+        <div>
+    </div>
+
+    <nav class="w-[100%] bg-sky-700">
+        <div class="navbar-logo">
+           
+        </div>
+    </nav>
+    <iscomment> end SideNav </iscomment>
+
+</header>
