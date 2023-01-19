@@ -1,0 +1,31 @@
+<form action="${URLUtils.url('PsPlusSub-HandleSub')}" method="POST">
+
+    <div class="form-group
+        <isif condition="${pdict.psplusSubForm.firstName.mandatory === true}">required</isif>">
+        <label for="firstName"> ${pdict.psplusSubForm.firstName.label} </label>
+        <input class="form-control" type="text" id="firstName" <isprint value="${pdict.psplusSubForm.firstName.attributes}" encoding="off" />>
+        <div class="invalid-feedback"></div>
+
+    </div>
+
+    <div class="form-group
+        <isif condition="${pdict.psplusSubForm.firstName.mandatory === true}">required</isif>">
+        <label for="lastName"> ${pdict.psplusSubForm.lastName.label} </label>
+        <input class="form-control" type="text" id="lastName" <isprint value="${pdict.psplusSubForm.lastName.attributes}" encoding="off" />>
+        <div class="invalid-feedback"></div>
+
+    </div>
+
+    <div class="form-group
+        <isif condition="${pdict.psplusSubForm.firstName.mandatory === true}">required</isif>">
+        <label for="email"> ${pdict.psplusSubForm.email.label} </label>
+        <input class="form-control" type="text" id="lastName" <isprint value="${pdict.psplusSubForm.email.attributes}" encoding="off" />>
+        <div class="invalid-feedback"></div>
+
+    </div>
+
+    <div class="text-center">
+        <button type="submit" class="btn btn-warning" name="subscribe">${Resource.msg('psplus.subs.form.btn','forms',null)}</button>
+    </div>
+
+</form>

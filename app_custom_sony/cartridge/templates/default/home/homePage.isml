@@ -4,4 +4,20 @@
             <isslot id="home-page-main-banner" context="global" description="Home page main abnner"  />
     </section>
 
+
+    <section class="categories my-5 ">
+        <isslot id="home-page-categories" context="global" description="home page categories"   />
+    </section>
+
+    <section class="products ">
+        <isslot id="home-page-products" context="global" description="home page Products"   />
+    </section>
+
+
+    <section class="ps-plus-form w-full my-5 bg-warning" >
+        <div class="w-[40%] m-auto p-5">
+            <isinclude url="${URLUtils.url('PsPlusSub-Show')}"  />
+        </div>
+    </section>
+
 </isdecorate>

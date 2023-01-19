@@ -1,16 +1,16 @@
 <isinclude template="/components/modules" />
 
-<div class="homepage-product-listing row">
+<div class="f-[90%] m-auto flex justify-content-center">
 
     <isloop items="${slotcontent.content}" var="product" status="loopState">
 
-        <div class="col-6 col-sm-4">
+        <div class="w-[20%]">
             <isinclude url="${URLUtils.url('Tile-Show', 'pid', product.ID, 'pview', 'tile', 'ratings', true, 'swatches', true)}"/>
         </div>
 
         <isif condition="${loopState.count == 1}" >
-            <div class="card col-6 col-sm-4 hp-product-content">
-                <div class="card-body">
+            <div class="">
+                <div class="">
                     <iscontentasset aid="home-product-tile-content" />
                 </div>
             </div>

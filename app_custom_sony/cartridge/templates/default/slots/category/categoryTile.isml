@@ -2,21 +2,21 @@
 
     <iscomment> Render a tile of the category Name and the Category Landing Slot Image field </iscomment>
 
-    <div class="category-slot">
+    <div class="w-[90%] m-auto">
         <isif condition="${slotcontent && slotcontent.calloutMsg}">
             <h2>
                 <isprint value="${slotcontent.calloutMsg}" encoding="off"/>
             </h2>
         </isif>
 
-        <div class="row">
+        <div class=" flex   justify-content-around  ">
             <isloop items="${slotcontent.content}" var="category">
                 <isif condition="${'slotBannerImage' in category.custom && category.custom.slotBannerImage}">
-                    <div class="col-sm-6 col-md-4 category-item">
+                    <div class="w-[25%] py-4 category-item ">
                         <a href="${URLUtils.url('Search-Show', 'cgid', category.ID)}" title="${category.displayName}">
                             <div class="category-tile">
-                                <img class="img-fluid" src="${category.custom.slotBannerImage.getURL()}" alt="${category.displayName}"/>
-                                <h1>
+                                <img class="img-fluid rounded-full hover:shadow-xl " src="${category.custom.slotBannerImage.getURL()}" alt="${category.displayName}"/>
+                                <h1 class="text-center">
                                     <isprint value="${category.displayName}" encoding="htmlcontent"/>
                                 </h1>
                             </div>
