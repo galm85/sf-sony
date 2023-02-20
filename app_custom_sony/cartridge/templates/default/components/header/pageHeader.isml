@@ -1,6 +1,6 @@
 <header>
     <isinclude template="/components/header/skipNav" />
-    <div class="header-banner slide-up d-none bg-sky-700">
+    <div class="header-banner slide-up d-none">
         <div class="container">
             <div class="d-flex justify-content-between">
                 <div></div>
@@ -15,7 +15,7 @@
             </div>
         </div>
     </div>
-    <nav role="navigation" class="bg-sky-700">
+    <nav role="navigation">
         <div class="header container">
             <div class="row">
                 <div class="col-12">
@@ -47,7 +47,7 @@
                 </div>
             </div>
         </div>
-        <div class="main-menu navbar-toggleable-sm menu-toggleable-left multilevel-dropdown d-none d-md-block bg-sky-800" id="sg-navbar-collapse">
+        <div class="main-menu navbar-toggleable-sm menu-toggleable-left multilevel-dropdown d-none d-md-block" id="sg-navbar-collapse">
             <div class="container">
                 <div class="row">
                     <isinclude url="${URLUtils.url('Page-IncludeHeaderMenu')}"/>

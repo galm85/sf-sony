@@ -1,0 +1,35 @@
+{
+    "name":"Full Banner",
+    "description": "This is a custom Full banner with title",
+    "group":"custom_components",
+    "attribute_definition_groups": [
+        {
+            "id":"bannerImage",
+            "attribute_definitions": [
+                {
+                    "id":"image",
+                    "name":"Image",
+                    "type":"file",
+                    "description": "The main image of the benner",
+                    "required": true
+                },
+                {
+                    "id":"alt",
+                    "name":"Alt text",
+                    "description": "The alte text of the image",
+                    "type":"string",
+                    "required": true
+                },
+                {
+                    "id":"title",
+                    "name":"Title",
+                    "description": "The Title in the middle of the banner",
+                    "type":"string",
+                    "required": true
+                }
+            ]
+        }
+        
+    ],
+    "region_definitions": []
+}

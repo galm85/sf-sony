@@ -1,0 +1,39 @@
+{
+    "name": "Custom Form",
+    "description": "A custom form",
+    "group": "custom_components",
+    "attribute_definition_groups": [
+        {
+            "id":"custom_form",
+            "attribute_definitions": [
+                {
+                    "id": "form_name",
+                    "name": "Form Name",
+                    "type":"string",
+                    "description": "The name of the form",
+                    "required": true
+                },{
+                    "id":"form_action",
+                    "name":"The Form Action",
+                    "type":"string",
+                    "description":"the form action",
+                    "required": true
+                },{
+                    "id":"form_button_label",
+                    "name":"Submit button label",
+                    "type":"string",
+                    "description": "The label on the submit button",
+                    "required": false,
+                    "default_value":"Submit"
+                }
+
+            ]
+        }
+    ],
+    "region_definitions": [
+        {
+            "id":"inputs",
+            "name":"Inputs"
+        }
+    ]
+}

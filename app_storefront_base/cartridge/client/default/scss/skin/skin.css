@@ -71,12 +71,12 @@ header ~ #maincontent .container a:not(.btn-primary, .btn-outline-primary) {
 }
 @media (min-width: 769px) {
   .navbar,
-.navbar .nav-item,
-.navbar .nav-item a,
-.navbar .nav-item.dropdown,
-.navbar .nav-item.dropdown a,
-.dropdown-menu,
-.dropdown-menu a {
+  .navbar .nav-item,
+  .navbar .nav-item a,
+  .navbar .nav-item.dropdown,
+  .navbar .nav-item.dropdown a,
+  .dropdown-menu,
+  .dropdown-menu a {
     color: var(--skin-menu-color-1-invert);
   }
 }

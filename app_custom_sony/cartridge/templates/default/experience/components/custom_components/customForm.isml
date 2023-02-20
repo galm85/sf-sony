@@ -1,0 +1,27 @@
+<isscript>
+    var assets = require('*/cartridge/scripts/assets.js');
+    assets.addCss('/css/pdCustomComponents.css');
+</isscript>
+
+
+<div class="custom-form container my-5">
+    
+    <div class="row">
+        <div class="col-12">
+            <h1 class="text-center">${pdict.form_name.toUpperCase()}</h1>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-10 col-md-6">
+            <form method="POST" accept="${pdict.form_action}">
+                <isprint value="${pdict.regions.inputs.render()}" encoding="off" />
+                
+                <div class="text-center mb-5">
+                    <button type="submit" class="btn btn-outline-primary">${pdict.form_button}</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>

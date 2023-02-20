@@ -1,0 +1,9 @@
+<isscript>
+    var assets = require('*/cartridge/scripts/assets.js');
+    assets.addCss('/css/pdCustomComponents.css');
+</isscript>
+
+<div class=" form-group custom-input">
+    <label for="${pdict.input_id}">${pdict.input_label}</label>
+    <input type="${pdict.input_type}" name="${pdict.input_name}" id="${pdict.input_id}" class="form-control"/>
+</div>

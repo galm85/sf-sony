@@ -1,13 +1,13 @@
-<ul class="dropdown-menu" role="menu" aria-hidden="true" aria-label="${category.id}">
+<ul class="dropdown-menu bg-sky-700" role="menu" aria-hidden="true" aria-label="${category.id}">
     <isloop items="${menuItem.subCategories}" var="category">
         <isif condition="${category.subCategories}">
-            <li class="dropdown-item dropdown" role="presentation">
+            <li class="dropdown-item dropdown bg-sky-700 hover:bg-sky-400 " role="presentation">
                 <a href="${category.url}" id="${category.id}" class="dropdown-link dropdown-toggle text-white" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">${category.name}</a>
                 <isset name="menuItem" value="${category}" scope="page" />
                 <isinclude template="components/header/menuItem" />
             </li>
         <iselse/>
-            <li class="dropdown-item" role="presentation">
+            <li class="dropdown-item bg-sky-700 hover:bg-sky-400 " role="presentation">
                 <a href="${category.url}" id="${category.id}" role="menuitem" class="dropdown-link text-white" tabindex="0">${category.name}</a>
             </li>
         </isif>

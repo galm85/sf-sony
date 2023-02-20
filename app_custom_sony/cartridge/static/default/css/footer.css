@@ -1,0 +1,11 @@
+.footer-logo div {
+  width: 100%;
+}
+.footer-logo div p {
+  width: 100%;
+}
+.footer-logo div p img {
+  width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=footer.css.map */

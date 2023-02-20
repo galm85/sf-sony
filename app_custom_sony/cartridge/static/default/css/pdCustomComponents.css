@@ -1,0 +1,44 @@
+.full-banner {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+.full-banner .full-banner-image-container {
+  width: 100%;
+  height: 100%;
+}
+.full-banner .full-banner-image-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.full-banner h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px 70px;
+  color: white;
+  border-radius: 20px;
+}
+
+.custom-input {
+  margin: 10px 0;
+}
+.custom-input label {
+  color: rgb(158, 154, 154);
+}
+.custom-input input {
+  padding: 10px 20px;
+  transition: all ease-in 0.1s;
+}
+.custom-input input:focus {
+  background-color: rgb(179, 179, 179);
+  outline: none;
+  box-shadow: none;
+  border: none;
+}/*# sourceMappingURL=pdCustomComponents.css.map */

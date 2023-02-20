@@ -1,0 +1,28 @@
+{
+    "name":"Custom Input",
+    "description": "A custom input for a form",
+    "group": "custom_components",
+    "attribute_definition_groups": [
+        {
+            "id":"custom_form",
+            "attribute_definitions": [
+                {
+                    "id":"input_label",
+                    "name":"Input Label",
+                    "type":"string",
+                    "description": "The label of the input",
+                    "required": true
+                },
+                {
+                    "id":"input_type",
+                    "name":"Input Type",
+                    "type":"enum",
+                    "description":"The type of the input",
+                    "values":["text","number"],
+                    "required": true
+                }
+            ]
+        }
+    ],
+    "region_definitions": []
+}
